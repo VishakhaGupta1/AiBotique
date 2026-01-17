@@ -1,0 +1,31 @@
+# Recommended files/folders to delete for a minimal, production-ready workspace:
+
+# Legacy/unused backend
+server/
+
+# Blender 3D assets (remove if not needed for 3D features)
+blender/
+
+# Sample/reference files (remove if not needed)
+sample_home_page.jpg
+SHIRT.png
+store.jpg
+Reference Paper.pdf
+
+# Client build and dependencies (can be regenerated)
+client/dist/
+client/node_modules/
+
+# Python virtual environment (can be regenerated)
+server_py/.venv/
+
+# Empty or unused folders
+server_py/data/
+server_py/models/
+
+# Any other files you know are not needed for your current deployment
+
+# After deleting, run:
+# - npm install (in client/) to restore node_modules
+# - npm run build (in client/) to regenerate dist
+# - python -m venv .venv && pip install -r requirements.txt (in server_py/) to restore .venv
