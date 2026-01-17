@@ -1,63 +1,25 @@
 
 
+
 # AiBotique
 
-AiBotique is a demo web application for virtual fashion try-on, outfit generation, and recommendations.
-
-## Project Structure
-
-- `client/` – React frontend (Vite, Tailwind CSS)
-- `server_py/` – Flask backend API
-- `tryon_datasets/sample1/` – Sample images for try-on demo
+Minimal demo for virtual fashion try-on, outfit generation, and recommendations.
 
 ## Setup
 
-### Backend (Flask)
-1. Go to the backend folder:
-  ```
-  cd server_py
-  ```
-2. Create and activate a virtual environment:
-  ```
-  python -m venv .venv
-  .venv\Scripts\activate
-  ```
-3. Install dependencies:
-  ```
-  pip install -r requirements.txt
-  ```
-4. Copy `.env.example` to `.env` and add your OpenAI API key.
-5. Start the server:
-  ```
-  python app.py
-  ```
+**Backend:**
+1. `cd server_py`
+2. `python -m venv .venv && .venv\Scripts\activate`
+3. `pip install -r requirements.txt`
+4. Copy `.env.example` to `.env` and add your OpenAI API key
+5. `python app.py`
 
-### Frontend (React)
-1. Go to the frontend folder:
-  ```
-  cd client
-  ```
-2. Install dependencies:
-  ```
-  npm install
-  ```
-3. Copy `.env.example` to `.env` (default is fine for local use).
-4. Start the development server:
-  ```
-  npm run dev
-  ```
-5. Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-## Features
-
-- Upload a body photo and a garment photo to preview a virtual try-on
-- Generate outfit images from text prompts (requires OpenAI API key)
-- Get simple fashion recommendations
-
-## Notes
-
-- Demo images are in `tryon_datasets/sample1/`
-- For advanced try-on, see comments in `server_py/utils/tryon.py`
+**Frontend:**
+1. `cd client`
+2. `npm install`
+3. Copy `.env.example` to `.env`
+4. `npm run dev`
+5. Open http://localhost:5173
 
 2) Install dependencies
 
