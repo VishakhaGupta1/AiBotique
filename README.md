@@ -1,35 +1,63 @@
 
-# ARBotique – Minimal AI & AR Fashion Demo
 
-## Overview
-- **Frontend:** React (Vite + Tailwind) in `client/`
-- **Backend:** Flask API in `server_py/` (DALL·E, Try-On, Recommendations)
+# AiBotique
 
-## Quick Start
-1. Set up Python backend:
-  - `cd server_py`
-  - `python -m venv .venv && .venv\Scripts\activate`
-  - `pip install -r requirements.txt`
-  - Copy `.env.example` to `.env` and set your OpenAI key
-  - `python app.py`
-2. Set up React frontend:
-  - `cd client`
-  - `npm install`
-  - Copy `.env.example` to `.env` (default is fine for local dev)
-  - `npm run dev`
-3. Open http://localhost:5173
+AiBotique is a demo web application for virtual fashion try-on, outfit generation, and recommendations.
+
+## Project Structure
+
+- `client/` – React frontend (Vite, Tailwind CSS)
+- `server_py/` – Flask backend API
+- `tryon_datasets/sample1/` – Sample images for try-on demo
+
+## Setup
+
+### Backend (Flask)
+1. Go to the backend folder:
+  ```
+  cd server_py
+  ```
+2. Create and activate a virtual environment:
+  ```
+  python -m venv .venv
+  .venv\Scripts\activate
+  ```
+3. Install dependencies:
+  ```
+  pip install -r requirements.txt
+  ```
+4. Copy `.env.example` to `.env` and add your OpenAI API key.
+5. Start the server:
+  ```
+  python app.py
+  ```
+
+### Frontend (React)
+1. Go to the frontend folder:
+  ```
+  cd client
+  ```
+2. Install dependencies:
+  ```
+  npm install
+  ```
+3. Copy `.env.example` to `.env` (default is fine for local use).
+4. Start the development server:
+  ```
+  npm run dev
+  ```
+5. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## Features
-- **Virtual Try-On:** Upload a body photo and a garment photo, get a composite preview.
-- **Outfit Generation:** Generate outfit images from text prompts (DALL·E).
-- **Recommendations:** Get personalized fashion recommendations.
 
-## Minimal Dataset
-- See `tryon_datasets/sample1/` for demo images.
+- Upload a body photo and a garment photo to preview a virtual try-on
+- Generate outfit images from text prompts (requires OpenAI API key)
+- Get simple fashion recommendations
 
 ## Notes
-- For real try-on, see comments in `server_py/utils/tryon.py` to plug in advanced ML.
-- All legacy, empty, or unused folders have been removed for clarity.
+
+- Demo images are in `tryon_datasets/sample1/`
+- For advanced try-on, see comments in `server_py/utils/tryon.py`
 
 2) Install dependencies
 
