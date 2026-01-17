@@ -46,4 +46,3 @@ This document provides details on the available API endpoints, advanced ML integ
 
 ---
 
-For most users, see the main [README.md](README.md) for setup and usage. This file is for developers and advanced users.
