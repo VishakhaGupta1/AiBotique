@@ -1,0 +1,20 @@
+# Node modules and build
+client/node_modules/
+client/dist/
+
+# Python venv and cache
+server_py/.venv/
+server_py/__pycache__/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Env files
+*.env
+
+# Logs
+*.log
+
+# Ignore legacy/empty server folder
+server/
